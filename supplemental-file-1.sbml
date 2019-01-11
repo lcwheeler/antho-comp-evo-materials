@@ -1,0 +1,716 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" level="3" version="1">
+  <model id="__main" name="__main">
+    <listOfCompartments>
+      <compartment sboTerm="SBO:0000410" id="default_compartment" spatialDimensions="3" size="1" constant="true"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species id="PCoA" compartment="default_compartment" initialConcentration="0.01" hasOnlySubstanceUnits="false" boundaryCondition="true" constant="false"/>
+      <species id="cha" compartment="default_compartment" initialConcentration="0.01" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="nar" compartment="default_compartment" initialConcentration="0.01" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="DHK" compartment="default_compartment" initialConcentration="0.00234285309002779" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="DHQ" compartment="default_compartment" initialConcentration="0.000791562951103398" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="DHM" compartment="default_compartment" initialConcentration="0.000476695069979925" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="kam" compartment="default_compartment" initialConcentration="3.9491570480736" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="que" compartment="default_compartment" initialConcentration="1.33427333563917" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="myr" compartment="default_compartment" initialConcentration="0.803526138026362" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="LCP" compartment="default_compartment" initialConcentration="0.00234285309002779" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="LCC" compartment="default_compartment" initialConcentration="0.000791562951103398" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="LCD" compartment="default_compartment" initialConcentration="0.000476695069979925" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="pel" compartment="default_compartment" initialConcentration="3.9491570480736" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="cya" compartment="default_compartment" initialConcentration="1.33427333563917" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="del" compartment="default_compartment" initialConcentration="0.803526138026362" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+    </listOfSpecies>
+    <listOfParameters>
+      <parameter id="k_CHS_PCoA" value="14" constant="true"/>
+      <parameter id="CHSt" value="0.001" constant="true"/>
+      <parameter id="Km_CHS_PCoA" value="0.013" constant="true"/>
+      <parameter id="k_CHI_cha" value="14" constant="true"/>
+      <parameter id="CHIt" value="0.001" constant="true"/>
+      <parameter id="Km_CHI_cha" value="0.013" constant="true"/>
+      <parameter id="k_F3H_nar" value="14" constant="true"/>
+      <parameter id="F3Ht" value="0.001" constant="true"/>
+      <parameter id="Km_F3H_nar" value="0.013" constant="true"/>
+      <parameter id="k_F3pH_DHK" value="14" constant="true"/>
+      <parameter id="F3pHt" value="0.001" constant="true"/>
+      <parameter id="Km_F3pH_DHK" value="0.013" constant="true"/>
+      <parameter id="k_F35H_DHQ" value="14" constant="true"/>
+      <parameter id="F35Ht" value="0.001" constant="true"/>
+      <parameter id="Km_F35H_DHQ" value="0.013" constant="true"/>
+      <parameter id="k_FLS_DHK" value="14" constant="true"/>
+      <parameter id="FLSt" value="0.001" constant="true"/>
+      <parameter id="Km_FLS_DHK" value="0.013" constant="true"/>
+      <parameter id="Km_FLS_DHQ" value="0.013" constant="true"/>
+      <parameter id="Km_FLS_DHM" value="0.013" constant="true"/>
+      <parameter id="k_FLS_DHQ" value="14" constant="true"/>
+      <parameter id="k_FLS_DHM" value="14" constant="true"/>
+      <parameter id="k_DFR_DHK" value="14" constant="true"/>
+      <parameter id="DFRt" value="0.001" constant="true"/>
+      <parameter id="Km_DFR_DHK" value="0.013" constant="true"/>
+      <parameter id="Km_DFR_DHQ" value="0.013" constant="true"/>
+      <parameter id="Km_DFR_DHM" value="0.013" constant="true"/>
+      <parameter id="k_DFR_DHQ" value="14" constant="true"/>
+      <parameter id="k_DFR_DHM" value="14" constant="true"/>
+      <parameter id="k_ANS_LCP" value="14" constant="true"/>
+      <parameter id="ANSt" value="0.001" constant="true"/>
+      <parameter id="Km_ANS_LCP" value="0.013" constant="true"/>
+      <parameter id="Km_ANS_LCC" value="0.013" constant="true"/>
+      <parameter id="Km_ANS_LCD" value="0.013" constant="true"/>
+      <parameter id="k_ANS_LCC" value="14" constant="true"/>
+      <parameter id="k_ANS_LCD" value="14" constant="true"/>
+      <parameter id="k_pel_sink" value="0.0005" constant="true"/>
+      <parameter id="k_cya_sink" value="0.0005" constant="true"/>
+      <parameter id="k_del_sink" value="0.0005" constant="true"/>
+      <parameter id="k_kam_sink" value="0.0005" constant="true"/>
+      <parameter id="k_que_sink" value="0.0005" constant="true"/>
+      <parameter id="k_myr_sink" value="0.0005" constant="true"/>
+      <parameter id="k_FNS_nar" value="14" constant="true"/>
+      <parameter id="Km_FNS_nar" value="0.013" constant="true"/>
+      <parameter id="FNSt" value="0.001" constant="true"/>
+    </listOfParameters>
+    <listOfReactions>
+      <reaction id="Source" reversible="false" fast="false">
+        <listOfProducts>
+          <speciesReference species="PCoA" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+      </reaction>
+      <reaction id="CHS" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="PCoA" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="cha" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> k_CHS_PCoA </ci>
+                <ci> CHSt </ci>
+                <ci> PCoA </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> Km_CHS_PCoA </ci>
+                <ci> PCoA </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="CHI" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="cha" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="nar" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> k_CHI_cha </ci>
+                <ci> CHIt </ci>
+                <ci> cha </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> Km_CHI_cha </ci>
+                <ci> cha </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="F3H_nar" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="nar" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="DHK" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> k_F3H_nar </ci>
+                <ci> F3Ht </ci>
+                <ci> nar </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> Km_F3H_nar </ci>
+                <ci> nar </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="F3pH_DHK" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="DHK" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="DHQ" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> k_F3pH_DHK </ci>
+                <ci> F3pHt </ci>
+                <ci> DHK </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> Km_F3pH_DHK </ci>
+                <ci> DHK </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="F35H_DHQ" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="DHQ" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="DHM" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> k_F35H_DHQ </ci>
+                <ci> F35Ht </ci>
+                <ci> DHQ </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <ci> Km_F35H_DHQ </ci>
+                <ci> DHQ </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="FLS_DHK" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="DHK" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="kam" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="DHQ"/>
+          <modifierSpeciesReference species="DHM"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> k_FLS_DHK </ci>
+                <ci> FLSt </ci>
+                <ci> DHK </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <apply>
+                  <times/>
+                  <ci> Km_FLS_DHK </ci>
+                  <apply>
+                    <plus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <ci> DHQ </ci>
+                      <ci> Km_FLS_DHQ </ci>
+                    </apply>
+                    <apply>
+                      <divide/>
+                      <ci> DHM </ci>
+                      <ci> Km_FLS_DHM </ci>
+                    </apply>
+                  </apply>
+                </apply>
+                <ci> DHK </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="FLS_DHQ" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="DHQ" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="que" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="DHK"/>
+          <modifierSpeciesReference species="DHM"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> k_FLS_DHQ </ci>
+                <ci> FLSt </ci>
+                <ci> DHQ </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <apply>
+                  <times/>
+                  <ci> Km_FLS_DHQ </ci>
+                  <apply>
+                    <plus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <ci> DHM </ci>
+                      <ci> Km_FLS_DHM </ci>
+                    </apply>
+                    <apply>
+                      <divide/>
+                      <ci> DHK </ci>
+                      <ci> Km_FLS_DHK </ci>
+                    </apply>
+                  </apply>
+                </apply>
+                <ci> DHQ </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="FLS_DHM" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="DHM" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="myr" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="DHK"/>
+          <modifierSpeciesReference species="DHQ"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> k_FLS_DHM </ci>
+                <ci> FLSt </ci>
+                <ci> DHM </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <apply>
+                  <times/>
+                  <ci> Km_FLS_DHM </ci>
+                  <apply>
+                    <plus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <ci> DHK </ci>
+                      <ci> Km_FLS_DHK </ci>
+                    </apply>
+                    <apply>
+                      <divide/>
+                      <ci> DHQ </ci>
+                      <ci> Km_FLS_DHQ </ci>
+                    </apply>
+                  </apply>
+                </apply>
+                <ci> DHM </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="DFR_DHK" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="DHK" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="LCP" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="DHQ"/>
+          <modifierSpeciesReference species="DHM"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> k_DFR_DHK </ci>
+                <ci> DFRt </ci>
+                <ci> DHK </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <apply>
+                  <times/>
+                  <ci> Km_DFR_DHK </ci>
+                  <apply>
+                    <plus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <ci> DHQ </ci>
+                      <ci> Km_DFR_DHQ </ci>
+                    </apply>
+                    <apply>
+                      <divide/>
+                      <ci> DHM </ci>
+                      <ci> Km_DFR_DHM </ci>
+                    </apply>
+                  </apply>
+                </apply>
+                <ci> DHK </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="DFR_DHQ" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="DHQ" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="LCC" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="DHK"/>
+          <modifierSpeciesReference species="DHM"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> k_DFR_DHQ </ci>
+                <ci> DFRt </ci>
+                <ci> DHQ </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <apply>
+                  <times/>
+                  <ci> Km_DFR_DHQ </ci>
+                  <apply>
+                    <plus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <ci> DHK </ci>
+                      <ci> Km_DFR_DHK </ci>
+                    </apply>
+                    <apply>
+                      <divide/>
+                      <ci> DHM </ci>
+                      <ci> Km_DFR_DHM </ci>
+                    </apply>
+                  </apply>
+                </apply>
+                <ci> DHQ </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="DFR_DHM" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="DHM" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="LCD" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="DHK"/>
+          <modifierSpeciesReference species="DHQ"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> k_DFR_DHM </ci>
+                <ci> DFRt </ci>
+                <ci> DHM </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <apply>
+                  <times/>
+                  <ci> Km_DFR_DHM </ci>
+                  <apply>
+                    <plus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <ci> DHK </ci>
+                      <ci> Km_DFR_DHK </ci>
+                    </apply>
+                    <apply>
+                      <divide/>
+                      <ci> DHQ </ci>
+                      <ci> Km_DFR_DHQ </ci>
+                    </apply>
+                  </apply>
+                </apply>
+                <ci> DHM </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="ANS_LCP" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="LCP" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="pel" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="LCC"/>
+          <modifierSpeciesReference species="LCD"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> k_ANS_LCP </ci>
+                <ci> ANSt </ci>
+                <ci> LCP </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <apply>
+                  <times/>
+                  <ci> Km_ANS_LCP </ci>
+                  <apply>
+                    <plus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <ci> LCC </ci>
+                      <ci> Km_ANS_LCC </ci>
+                    </apply>
+                    <apply>
+                      <divide/>
+                      <ci> LCD </ci>
+                      <ci> Km_ANS_LCD </ci>
+                    </apply>
+                  </apply>
+                </apply>
+                <ci> LCP </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="ANS_LCC" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="LCC" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="cya" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="LCP"/>
+          <modifierSpeciesReference species="LCD"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> k_ANS_LCC </ci>
+                <ci> ANSt </ci>
+                <ci> LCC </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <apply>
+                  <times/>
+                  <ci> Km_ANS_LCC </ci>
+                  <apply>
+                    <plus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <ci> LCP </ci>
+                      <ci> Km_ANS_LCP </ci>
+                    </apply>
+                    <apply>
+                      <divide/>
+                      <ci> LCD </ci>
+                      <ci> Km_ANS_LCD </ci>
+                    </apply>
+                  </apply>
+                </apply>
+                <ci> LCC </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="ANS_LCD" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="LCD" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference species="del" stoichiometry="1" constant="true"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference species="LCP"/>
+          <modifierSpeciesReference species="LCC"/>
+        </listOfModifiers>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <divide/>
+              <apply>
+                <times/>
+                <ci> k_ANS_LCD </ci>
+                <ci> ANSt </ci>
+                <ci> LCD </ci>
+              </apply>
+              <apply>
+                <plus/>
+                <apply>
+                  <times/>
+                  <ci> Km_ANS_LCD </ci>
+                  <apply>
+                    <plus/>
+                    <cn type="integer"> 1 </cn>
+                    <apply>
+                      <divide/>
+                      <ci> LCP </ci>
+                      <ci> Km_ANS_LCP </ci>
+                    </apply>
+                    <apply>
+                      <divide/>
+                      <ci> LCC </ci>
+                      <ci> Km_ANS_LCC </ci>
+                    </apply>
+                  </apply>
+                </apply>
+                <ci> LCD </ci>
+              </apply>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="pel_sink" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="pel" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k_pel_sink </ci>
+              <ci> pel </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="cya_sink" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="cya" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k_cya_sink </ci>
+              <ci> cya </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="del_sink" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="del" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k_del_sink </ci>
+              <ci> del </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="kam_sink" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="kam" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k_kam_sink </ci>
+              <ci> kam </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="que_sink" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="que" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k_que_sink </ci>
+              <ci> que </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+      <reaction id="myr_sink" reversible="false" fast="false">
+        <listOfReactants>
+          <speciesReference species="myr" stoichiometry="1" constant="true"/>
+        </listOfReactants>
+        <kineticLaw>
+          <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+              <times/>
+              <ci> k_myr_sink </ci>
+              <ci> myr </ci>
+            </apply>
+          </math>
+        </kineticLaw>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>
