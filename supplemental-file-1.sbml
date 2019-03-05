@@ -6,20 +6,20 @@
     </listOfCompartments>
     <listOfSpecies>
       <species id="PCoA" compartment="default_compartment" initialConcentration="0.01" hasOnlySubstanceUnits="false" boundaryCondition="true" constant="false"/>
-      <species id="cha" compartment="default_compartment" initialConcentration="0.01" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="nar" compartment="default_compartment" initialConcentration="0.01" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="DHK" compartment="default_compartment" initialConcentration="0.00234285309002779" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="DHQ" compartment="default_compartment" initialConcentration="0.000791562951103398" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="DHM" compartment="default_compartment" initialConcentration="0.000476695069979925" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="kam" compartment="default_compartment" initialConcentration="3.9491570480736" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="que" compartment="default_compartment" initialConcentration="1.33427333563917" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="myr" compartment="default_compartment" initialConcentration="0.803526138026362" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="LCP" compartment="default_compartment" initialConcentration="0.00234285309002779" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="LCC" compartment="default_compartment" initialConcentration="0.000791562951103398" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="LCD" compartment="default_compartment" initialConcentration="0.000476695069979925" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="pel" compartment="default_compartment" initialConcentration="3.9491570480736" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="cya" compartment="default_compartment" initialConcentration="1.33427333563917" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
-      <species id="del" compartment="default_compartment" initialConcentration="0.803526138026362" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="cha" compartment="default_compartment" initialConcentration="0.00" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="nar" compartment="default_compartment" initialConcentration="0.00" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="DHK" compartment="default_compartment" initialConcentration="0.00" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="DHQ" compartment="default_compartment" initialConcentration="0.00" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="DHM" compartment="default_compartment" initialConcentration="0.00" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="kam" compartment="default_compartment" initialConcentration="0.00" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="que" compartment="default_compartment" initialConcentration="0.00" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="myr" compartment="default_compartment" initialConcentration="0.00" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="LCP" compartment="default_compartment" initialConcentration="0.00" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="LCC" compartment="default_compartment" initialConcentration="0.00" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="LCD" compartment="default_compartment" initialConcentration="0.00" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="pel" compartment="default_compartment" initialConcentration="0.00" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="cya" compartment="default_compartment" initialConcentration="0.00" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species id="del" compartment="default_compartment" initialConcentration="0.00" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
     </listOfSpecies>
     <listOfParameters>
       <parameter id="k_CHS_PCoA" value="14" constant="true"/>
